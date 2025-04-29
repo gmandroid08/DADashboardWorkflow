@@ -1,5 +1,5 @@
 # Install needed packages:
-!pip install streamlit pandas gspread gspread_dataframe google-auth streamlit-aggrid
+# pip install streamlit pandas gspread gspread_dataframe google-auth streamlit-aggrid
 
 import pandas as pd
 import streamlit as st
