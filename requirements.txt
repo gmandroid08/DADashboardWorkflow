@@ -1,1 +1,6 @@
-
+streamlit
+pandas
+gspread
+gspread_dataframe
+google-auth
+streamlit-aggrid
