@@ -10,7 +10,7 @@ from st_aggrid import AgGrid, GridOptionsBuilder
 
 # Setup credentials from Streamlit Secrets
 credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["dalivedashboard-552a127af3fd.json"]
+    st.secrets["552a127af3fd6b0745a86084f1d51bd4ad73e79f"]
 )
 
 gc = gspread.authorize(credentials)
