@@ -9,8 +9,10 @@ from gspread_dataframe import get_as_dataframe
 from st_aggrid import AgGrid, GridOptionsBuilder
 
 # Setup credentials from Streamlit Secrets
+scopes = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["gcp_service_account"]
+    st.secrets["gcp_service_account"],
+    scopes=scopes
 )
 
 gc = gspread.authorize(credentials)
